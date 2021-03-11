@@ -1,0 +1,16 @@
+<div *ngIf="car" class="border">
+  <div class="flex">
+    <div class="flex width-60">
+      <p><b>VIN-code: </b> {{car.vin_code}}</p>
+      <p><b>License plate: </b> {{car.license_plate}}</p>
+      <p><b>Produced year:</b> {{car.produced_date}}</p>
+    </div>
+    <div class="flex column">
+      <button (click)="edit()">Edit car info</button>
+      <button (click)="copy()">Copy car info</button>
+      <button (click)="delete()">Delete car</button>
+    </div>
+  </div>
+  <p><b>Description: </b> {{car.description}}</p>
+  <p><b>On the site from:</b> {{car.create_date.slice(0, 10)}}</p>
+</div>

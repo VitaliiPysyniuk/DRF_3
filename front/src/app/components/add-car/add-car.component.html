@@ -1,0 +1,14 @@
+<div class="border">
+  <h3 class="center">Add new car</h3>
+  <button (click)="paste()" [disabled]="!copiedCar">Paste copied car info</button>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <p><b>Brand: </b> <input [formControl]="brand"></p>
+    <p><b>Model: </b> <input [formControl]="model"></p>
+    <p><b>Price: </b> <input [formControl]="price"></p>
+    <p><b>License plate: </b> <input [formControl]="license_plate"></p>
+    <p><b>VIN-code: </b> <input [formControl]="vin_code"></p>
+    <p><b>Produced year: </b> <input [formControl]="producedDate"></p>
+    <p><b>Description: </b> <input [formControl]="description"></p>
+    <button>Save changes</button>
+  </form>
+</div>

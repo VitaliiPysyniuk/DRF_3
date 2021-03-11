@@ -1,0 +1,13 @@
+<div class="border relative">
+  <h2 class="center">All cars</h2>
+  <button (click)="onClick()">cars</button>
+  <img src="https://image.shutterstock.com/image-vector/plus-icon-vector-add-addition-600w-1716960496.jpg"
+       class="img" (click)="add()">
+  <div *ngIf="cars" class="flex">
+    <div class="width-100">
+      <app-car *ngFor="let car of cars" [car]="car"></app-car>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

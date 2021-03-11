@@ -1,0 +1,1 @@
+export {ICar} from './ICar';

@@ -1,0 +1,13 @@
+<div class="border">
+  <div class="button-border flex">
+    <div class="car-brand flex">
+      <h3>{{car.brand}} {{car.model}}</h3>
+      <h4>{{car.produced_date.slice(0, 4)}}</h4>
+    </div>
+    <h3>{{car.price}}$</h3>
+    <button (click)="onClick()">See description</button>
+  </div>
+  <div *ngIf="showDetails">
+    <app-car-details [car]="car"></app-car-details>
+  </div>
+</div>

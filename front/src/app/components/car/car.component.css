@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+}
+
+.border {
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 5px 50px;
+}
+
+.button-border {
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+h3 {
+  color: green;
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-brand {
+  width: 40%;
+}
+
+button {
+  height: 30px;
+  border-radius: 8px;
+}
+
+

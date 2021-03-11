@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.border {
+  border: 2px solid lightslategrey;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+}

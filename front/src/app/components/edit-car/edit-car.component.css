@@ -1,0 +1,10 @@
+.border {
+  border: 2px solid lightblue;
+  border-radius: 8px;
+  width: 350px;
+  padding: 5px;
+}
+
+.center {
+  text-align: center;
+}
